@@ -161,25 +161,25 @@ export const themeConfig: ThemeConfig = {
   footer: {
     // social links
     links: [
-      {
-        name: 'RSS',
-        url: '/atom.xml', // or /rss.xml
-      },
-      {
-        name: 'GitHub',
-        url: '',
-      },
-      {
-        name: 'Email',
-        url: '',
-      },
+      //{
+      //  name: 'RSS',
+      //  url: '/atom.xml', // or /rss.xml
+      //},
+      //{
+      //  name: 'GitHub',
+      //  url: '',
+      //},
+      //{
+      //  name: 'Email',
+      //  url: '',
+      //},
       // {
       //   name: 'X',
       //   url: '',
       // },
     ],
     // year of website start
-    startYear: 2025,
+    //startYear: 2025,
   },
   // FOOTER SETTINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> END
 
