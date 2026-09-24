@@ -11,17 +11,18 @@ export async function getStaticPaths() {
 }
 
 const currentLang = getLangFromLocale(Astro.currentLocale)
-// Get about page content with different language
-const allAboutEntries = await getCollection('about')
-const aboutEntry = allAboutEntries.find(entry => entry.data.lang === currentLang)
-  ?? allAboutEntries.find(entry => entry.data.lang === '')
-const { Content } = aboutEntry ? await render(aboutEntry) : { Content: null }
+// 把註釋也改了喵
+const allBangumiEntries = await getCollection('bangumi')
+// 替換獲取內容集合的方法和變量名喵
+const bangumiEntry = allBangumiEntries.find(entry => entry.data.lang === currentLang)
+  ?? allBangumiEntries.find(entry => entry.data.lang === '')
+const { Content } = bangumiEntry ? await render(bangumiEntry) : { Content: null }
 ---
 
 <Layout>
   <!-- Decorative Line -->
   <div class="uno-decorative-line" />
-  <!-- About Page Content -->
+  <!-- 把這裡的註釋也改成 Bangumi Page Content 喵 -->
   <div class="heti">
     {Content && <Content />}
   </div>
