@@ -35,4 +35,12 @@ const about = defineCollection({
   }),
 })
 
-export const collections = { posts, about }
+const bangumi = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bangumi' }),
+  schema: z.object({
+  lang: z.enum(['', ...allLocales]).optional().default(''),
+  }),
+})
+
+// 👇 別忘了在這裡把它導出，不然等於沒寫喵！
+export const collections = { posts, about, bangumi }
