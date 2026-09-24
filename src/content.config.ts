@@ -42,5 +42,4 @@ const bangumi = defineCollection({
   }),
 })
 
-// 👇 別忘了在這裡把它導出，不然等於沒寫喵！
 export const collections = { posts, about, bangumi }
