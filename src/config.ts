@@ -6,9 +6,9 @@ export const themeConfig: ThemeConfig = {
     // site title
     title: 'kishishiken',
     // site subtitle
-    subtitle: '',
+    subtitle: 'A normal blog.',
     // site description
-    description: 'A normal blog.',
+    description: '',
     // use i18n title/subtitle/description from src/i18n/ui.ts instead of static ones above
     i18nTitle: false, // true | false
     // author name
